@@ -2,21 +2,21 @@
 const screens = [
   {
     id: "dashboard",
-    img: "/assets/screens/dashboard.png",
+    img: "dashboard.png",
     title: "Home dashboard",
     role: "Daily guidance overview",
     desc: "Opens to your daily safety summary, current condition profile, and a single tap to start scanning.",
   },
   {
     id: "camera",
-    img: "/assets/screens/camera.png",
+    img: "camera.png",
     title: "Scan experience",
     role: "Fast capture flow",
     desc: "Switch between camera and barcode mode in one tap. Designed for grocery aisles and quick meal checks.",
   },
   {
     id: "result",
-    img: "/assets/screens/scan-result.png",
+    img: "scan-result.png",
     title: "Result screen",
     role: "The core verdict view",
     desc: "Verdict, confidence level, flagged nutrients, and a suggested safer alternative — all in one screen.",
@@ -24,14 +24,14 @@ const screens = [
   },
   {
     id: "nutribot",
-    img: "/assets/screens/nutribot.png",
+    img: "nutribot.png",
     title: "NutriBot guidance",
     role: "Explainability on demand",
     desc: "Ask follow-up questions about any result. NutriBot explains the nutrition logic in plain language.",
   },
   {
     id: "history",
-    img: "/assets/screens/history.png",
+    img: "history.png",
     title: "History and trends",
     role: "Habit review",
     desc: "Review your scan log, see recurring risk patterns, and track condition-aware decisions over time.",

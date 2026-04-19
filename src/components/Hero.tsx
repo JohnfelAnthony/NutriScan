@@ -23,17 +23,17 @@ export default function Hero() {
           <div className="hero-glow" aria-hidden="true"></div>
           <img
             className="hero-phone hero-phone-back"
-            src="/assets/screens/dashboard.png"
+            src="dashboard.png"
             alt="NutriScan dashboard screen"
           />
           <img
             className="hero-phone hero-phone-mid"
-            src="/assets/screens/hero-phone.png"
+            src="hero-phone.png"
             alt="NutriScan scan camera screen"
           />
           <img
             className="hero-phone"
-            src="/assets/screens/scan-result.png"
+            src="scan-result.png"
             alt="NutriScan result screen showing a condition-aware verdict"
           />
         </div>
