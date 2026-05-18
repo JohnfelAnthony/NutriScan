@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "Bash(Get-ChildItem C:\\\\Users\\\\jhepo\\\\Desktop\\\\NutriScans *)",
+      "Bash(mv \"C:\\\\Users\\\\jhepo\\\\Desktop\\\\NutriScans\\\\UsersjhepoDesktopNutriScans\"/* \"C:\\\\Users\\\\jhepo\\\\Desktop\\\\NutriScans\")",
+      "Bash(mv \"C:\\\\Users\\\\jhepo\\\\Desktop\\\\NutriScans\\\\UsersjhepoDesktopNutriScans\"/.* \"C:\\\\Users\\\\jhepo\\\\Desktop\\\\NutriScans\")",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Skill(superpowers:brainstorming)",
+      "Bash(Get-ChildItem -Recurse -Depth 0 C:\\\\Users\\\\jhepo\\\\Desktop\\\\NutriScans)",
+      "Bash(Select-Object FullName, Length, LastWriteTime)",
+      "Bash(Format-Table -AutoSize)",
+      "Skill(frontend-design:frontend-design)",
+      "Bash(npx vite *)"
+    ]
+  }
+}

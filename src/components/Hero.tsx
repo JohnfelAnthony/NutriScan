@@ -4,6 +4,7 @@ const base = import.meta.env.BASE_URL;
 export default function Hero() {
   return (
     <section className="hero" id="home">
+      <div className="hero-bg-accent" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-content">
           <h1 className="hero-title">
@@ -23,20 +24,21 @@ export default function Hero() {
 
         <div className="hero-visual">
           <div className="hero-glow" aria-hidden="true"></div>
+          <div className="hero-glow-secondary" aria-hidden="true"></div>
           <img
             className="hero-phone hero-phone-back"
-            src={`${base}dashboard.png`}
+            src={`${base}Dashboard_NewW.png`}
             alt="NutriScan dashboard screen"
           />
           <img
             className="hero-phone hero-phone-mid"
-            src={`${base}hero-phone.png`}
+            src={`${base}Scan_NEWw.png`}
             alt="NutriScan scan camera screen"
           />
           <img
             className="hero-phone"
-            src={`${base}scan-result.png`}
-            alt="NutriScan result screen showing a condition-aware verdict"
+            src={`${base}LAnding_New.png`}
+            alt="NutriScan landing screen"
           />
         </div>
       </div>

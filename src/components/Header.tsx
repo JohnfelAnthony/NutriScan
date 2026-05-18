@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -31,7 +33,13 @@ export default function Header() {
   return (
     <header className="site-header" id="top">
       <div className="brand">
-        <span className="brand-mark" aria-hidden="true"></span>
+        <img
+          className="brand-logo"
+          src={`${base}Logo.png`}
+          alt="NutriScan logo"
+          width={48}
+          height={48}
+        />
         NutriScan
       </div>
 

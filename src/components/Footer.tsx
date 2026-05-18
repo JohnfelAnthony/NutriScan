@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 const footerLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -47,7 +49,13 @@ export default function Footer() {
         <div className="footer-bottom">
           <div>
             <div className="footer-brand">
-              <span className="brand-mark" aria-hidden="true"></span>
+              <img
+                className="brand-logo"
+                src={`${base}Logo.png`}
+                alt="NutriScan logo"
+                width={48}
+                height={48}
+              />
               <span className="footer-brand-name">NutriScan</span>
             </div>
             <p className="footer-tagline">Condition-aware food guidance.</p>
