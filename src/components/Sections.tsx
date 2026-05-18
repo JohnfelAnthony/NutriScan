@@ -15,13 +15,6 @@ const screens = [
     title: "Scan experience",
     role: "Fast capture flow",
     desc: "Switch between camera and barcode mode in one tap. Designed for grocery aisles and quick meal checks.",
-  },
-  {
-    id: "result",
-    img: `${base}Result_new.png`,
-    title: "Result screen",
-    role: "The core verdict view",
-    desc: "Verdict, confidence level, flagged nutrients, and a suggested safer alternative — all in one screen.",
     featured: true,
   },
   {
@@ -113,8 +106,8 @@ export default function Sections() {
           <p className="section-kicker">Product screens showcase</p>
           <h2 className="section-title">See the product in action.</h2>
           <p className="section-subtitle">
-            Each screen plays a specific role in the decision journey, with the
-            result view as the visual anchor.
+            Each screen plays a specific role in the decision journey, from
+            capture to follow-up guidance.
           </p>
 
           <div className="screen-story-list">
