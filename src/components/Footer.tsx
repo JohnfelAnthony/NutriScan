@@ -3,6 +3,7 @@ const base = import.meta.env.BASE_URL;
 const footerLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Users", href: "#users" },
   { label: "Features", href: "#features" },
   { label: "Contact", href: "#contact" },
 ];

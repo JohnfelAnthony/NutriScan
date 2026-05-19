@@ -5,6 +5,7 @@ const base = import.meta.env.BASE_URL;
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Users", href: "#users" },
   { label: "Contact", href: "#contact" },
 ];
 

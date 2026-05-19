@@ -48,52 +48,145 @@ const trustItems = [
   },
 ];
 
+const targetUsers = [
+  {
+    id: "diabetes",
+    title: "Diabetes / Prediabetes",
+    desc: "Highlights carb-heavy foods and sugar spikes, making daily choices easier to compare.",
+    tags: ["Carb load", "Sugar spikes", "Label clarity"],
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 2s6 6.5 6 10.5a6 6 0 1 1-12 0C6 8.5 12 2 12 2z" />
+        <path d="M9 13h6" />
+      </svg>
+    ),
+  },
+  {
+    id: "hypertension",
+    title: "High blood pressure",
+    desc: "Flags sodium-heavy foods and pressure-sensitive ingredients so users can choose safer options faster.",
+    tags: ["Sodium focus", "Hidden salt", "Daily staples"],
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+        <path d="M3.5 12h4l2-3 3 6 2-4h4.5" />
+      </svg>
+    ),
+  },
+  {
+    id: "heart",
+    title: "Heart disease / High cholesterol",
+    desc: "Surfaces saturated fat and cholesterol signals that often guide heart-friendly decisions.",
+    tags: ["Saturated fat", "Cholesterol watch", "Fiber boosts"],
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M3 8c2.5 0 3.5 4 7 4s4.5-4 8-4" />
+        <path d="M3 16c2.5 0 3.5-4 7-4s4.5 4 8 4" />
+        <path d="M12 4v16" />
+      </svg>
+    ),
+  },
+  {
+    id: "kidney",
+    title: "Kidney disease / Renal diet",
+    desc: "Highlights nutrients that often require monitoring in kidney care, helping users compare options quickly.",
+    tags: ["Potassium check", "Phosphorus watch", "Portion clarity"],
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 2c3.3 4.1 6 6.5 6 10.2a6 6 0 1 1-12 0C6 8.5 8.7 6.1 12 2z" />
+        <path d="M12 9c-1.6 1.4-2.6 2.8-2.6 4.4" />
+      </svg>
+    ),
+  },
+];
+
+const aboutCards = [
+  {
+    id: "about",
+    title: "About",
+    text: "NutriScan is a condition-aware nutrition guide built for fast, everyday decisions.",
+  },
+  {
+    id: "background",
+    title: "Background",
+    text: "NutriScan grew from the everyday friction of decoding labels while managing chronic conditions.",
+  },
+  {
+    id: "vision",
+    title: "Vision",
+    text: "Make personalized nutrition guidance feel as common and accessible as a food label.",
+  },
+];
+
 export default function Sections() {
   return (
     <>
-      {/* ══ 1. WHY IT MATTERS ══ */}
+      {/* ══ 1. ABOUT US ══ */}
       <section className="section section-white reveal-section" id="about">
         <div className="section-inner">
-          <div className="why-layout">
-            <div className="why-lead">
-              <p className="section-kicker">Why it matters</p>
-              <h2 className="section-title">
-                A food label does not reflect your condition.
-              </h2>
-              <p className="section-subtitle">
-                Two people can eat the same meal and have very different health
-                outcomes. Generic labels cannot account for that. NutriScan can.
-              </p>
+          <div className="about-layout">
+            <div className="about-copy">
+              <div className="about-lead">
+                <p className="section-kicker">About us</p>
+                <h2 className="section-title">
+                  Human-first nutrition guidance.
+                </h2>
+                <p className="section-subtitle narrow">
+                    We help people in need make safer food choices with clear,
+                    condition-aware guidance they can act on quickly.
+                </p>
+              </div>
+
+              <div className="about-cards">
+                {aboutCards.map((card) => (
+                  <article className="about-card reveal-child" key={card.id}>
+                    <p className="about-label">{card.title}</p>
+                    <p>{card.text}</p>
+                  </article>
+                ))}
+              </div>
             </div>
 
-            <div className="why-evidence">
-              <div className="evidence-item reveal-child">
-                <p className="evidence-label">The gap</p>
-                <p className="evidence-text">
-                  Standard nutrition facts are designed for a general
-                  population. They do not flag when a food exceeds the safe
-                  sodium range for someone managing hypertension, or when a
-                  carbohydrate load is problematic for a diabetic user.
-                </p>
-              </div>
-              <div className="evidence-divider" />
-              <div className="evidence-item reveal-child">
-                <p className="evidence-label">The real-world context</p>
-                <p className="evidence-text">
-                  Most food decisions happen in seconds — during grocery runs,
-                  at meal prep, or while ordering. There is no time to cross-
-                  reference condition guidelines. NutriScan gives a direct
-                  answer in that moment.
-                </p>
-              </div>
-              <div className="evidence-divider" />
-              <div className="evidence-item reveal-child">
-                <p className="evidence-label">What changes with NutriScan</p>
-                <p className="evidence-text">
-                  Instead of a label, you get a verdict. Instead of numbers,
-                  you get reasoning. Instead of guessing, you get guidance
-                  matched to your profile.
-                </p>
+            <div className="about-visual reveal-child" aria-hidden="true">
+              <div className="about-visual-shell">
+                <div className="about-visual-ring ring-one"></div>
+                <div className="about-visual-ring ring-two"></div>
+                <div className="about-visual-core">
+                  <p className="about-visual-kicker">NutriScan</p>
+                  <h3>Guidance core</h3>
+                  <p>Condition-aware signals</p>
+                </div>
+                <span className="about-visual-tag tag-one">Hypertension</span>
+                <span className="about-visual-tag tag-two">Everyday meals</span>
+                <span className="about-visual-tag tag-three">Kidney care</span>
               </div>
             </div>
           </div>
@@ -134,7 +227,49 @@ export default function Sections() {
         </div>
       </section>
 
-      {/* ══ 3. TRUST ══ */}
+      {/* ══ 3. TARGET USERS ══ */}
+      <section className="section section-white reveal-section users-section" id="users">
+        <div className="section-inner">
+          <div className="users-layout">
+            <div className="users-lead">
+              <p className="section-kicker">Target users</p>
+              <h2 className="section-title">
+                Built for people who need certainty, not guesses.
+              </h2>
+              <p className="section-subtitle">
+                NutriScan supports the conditions inside the app: diabetes,
+                high blood pressure, heart disease, and kidney disease.
+              </p>
+              <div className="users-pillset">
+                <span className="users-pill">Grocery aisles</span>
+                <span className="users-pill">Home cooking</span>
+                <span className="users-pill">Dining out</span>
+              </div>
+            </div>
+
+            <div className="users-grid">
+              {targetUsers.map((user) => (
+                <article className="user-card reveal-child" key={user.id}>
+                  <div className="user-icon" aria-hidden="true">
+                    {user.icon}
+                  </div>
+                  <h3>{user.title}</h3>
+                  <p>{user.desc}</p>
+                  <div className="user-tags">
+                    {user.tags.map((tag) => (
+                      <span key={tag} className="user-tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ 4. TRUST ══ */}
       <section className="section section-white reveal-section" id="trust">
         <div className="section-inner">
           <div className="trust-layout">
